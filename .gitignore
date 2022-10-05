@@ -1,0 +1,9 @@
+order/node_modules
+payment/node_modules
+shipping/node_modules
+
+order/dist
+payment/dist
+shipping/dist
+
+.env

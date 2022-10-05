@@ -1,0 +1,44 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "RabbitMQ API Document",
+        "description": "Description"
+    },
+    "host": "localhost:4000",
+    "basePath": "/",
+    "schemes": ["http"],
+    "paths": {
+        "/order": {
+            "post": {
+                "description": "Processing order service",
+                "produces": ["application/json"],
+                "consumes": ["application/json"],
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "order object",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "order": {
+                                    "type": "string"
+                                },
+                                "payment": {
+                                    "type": "boolean"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        }
+    }
+}

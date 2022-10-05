@@ -1,0 +1,24 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "RabbitMQ API Document",
+        "description": "Description"
+    },
+    "host": "localhost:4002",
+    "basePath": "/",
+    "schemes": ["http"],
+    "paths": {
+        "/shipping": {
+            "get": {
+                "description": "Get shipping service",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        }
+    }
+}
