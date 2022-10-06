@@ -20,11 +20,11 @@ Open your browser and try RabbitMQ GUI at: `http://localhost:15672/`
 
 ---
 
-Go to order folder `cd order` then `npm start`
+Go to order folder `cd order` -> `npm i` then `npm start`
 
-Go to payment folder `cd payment` then `npm start`
+Go to payment folder `cd payment` -> `npm i` then `npm start`
 
-Go to shipping folder `cd shipping` then `npm start`
+Go to shipping folder `cd shipping` -> `npm i` then `npm start`
 
 **Caution**: Open new terminal to start other services and keep the remains running
 

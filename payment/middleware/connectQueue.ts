@@ -5,6 +5,7 @@ async function connectQueue(queue: string) {
         const connection = await connect("amqp://localhost");
         const channel = await connection.createChannel();
 
+        await channel.assertExchange(queue, "topic", { durable: true });
         await channel.assertQueue(queue, { durable: true });
 
         return { connection, channel };
